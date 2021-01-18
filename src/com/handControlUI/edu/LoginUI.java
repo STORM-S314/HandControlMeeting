@@ -36,9 +36,9 @@ public class LoginUI {
 		jf.add(login);
 		jf.add(register);
 		//设置窗口大小
-		jf.setSize(800,1000);
+		jf.setSize(400,600);
 		//设置窗口初始位置
-		jf.setLocation(600,500);
+		jf.setLocation(800,300);
 		//设置窗口关闭方式
 		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
