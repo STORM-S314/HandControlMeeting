@@ -23,7 +23,8 @@ while True:
     cv.imshow('frame', ROI)
     cv.setMouseCallback('After',printHSV)
 
-
+    #opencv等待用户触发事件，等待时间为2ms，如果用户在这个时间内按下ESC，ASCII码
+    #为27，则跳出循环
     if cv.waitKey(2) == 27:
         break;
 
