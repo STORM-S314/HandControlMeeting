@@ -1,6 +1,13 @@
 import cv2 as cv
 import numpy as np
 import Pretreat as pre
+import classifier as cf
+from sklearn.svm import SVC
+from sklearn.model_selection import GridSearchCV
+import matplotlib.pyplot as plt
+import joblib
+#手势识别训练模型路径
+model_path = "./model/"
 #设置字体
 font = cv.FONT_HERSHEY_SIMPLEX
 #ROI大小
@@ -32,7 +39,6 @@ if __name__=="__main__":
         key = cv.waitKey(2) & 0xFF
         #按键判断并进行一定的调整
         #按'j''l''u''j'分别将选框左移，右移，上移，下移
-        #按'q'键退出录像
         if key == ord('i'):
             y0 += 5
         elif key == ord('k'):
@@ -45,6 +51,16 @@ if __name__=="__main__":
         #为27，则跳出循环
         elif key == 27:
             break
+        #按p进入预测
+        elif key == ord('p'):
+            descriptor_in_use = abs(res[1])
+            fd_test = np.zeros((1,31))
+            temp = descriptor_in_use[0]
+            for k in range(1,len(descriptor_in_use)):
+                fd_test[0,k-1] = int(100*descriptor_in_use[k]/temp)
+            clf = joblib.load(model_path + "svm_efd_" + "train_model.m")
+            test_svm = clf.predict(fd_test)
+            print(test_svm[0])
     #关闭摄像头
     cap.release()
     #关闭所有窗口
