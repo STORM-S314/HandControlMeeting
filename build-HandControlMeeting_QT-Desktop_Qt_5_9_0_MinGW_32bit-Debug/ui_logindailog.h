@@ -48,6 +48,7 @@ public:
         passwordEdit = new QLineEdit(LoginDailog);
         passwordEdit->setObjectName(QStringLiteral("passwordEdit"));
         passwordEdit->setGeometry(QRect(150, 90, 201, 21));
+        passwordEdit->setEchoMode(QLineEdit::Password);
         label = new QLabel(LoginDailog);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(80, 50, 51, 21));
@@ -66,6 +67,8 @@ public:
         LoginDailog->setWindowTitle(QApplication::translate("LoginDailog", "Dialog", Q_NULLPTR));
         loginButton->setText(QApplication::translate("LoginDailog", "\347\231\273\345\275\225", Q_NULLPTR));
         exitButton->setText(QApplication::translate("LoginDailog", "\351\200\200\345\207\272", Q_NULLPTR));
+        userNameEdit->setPlaceholderText(QApplication::translate("LoginDailog", "\350\257\267\350\276\223\345\205\245\347\224\250\346\210\267\345\220\215", Q_NULLPTR));
+        passwordEdit->setPlaceholderText(QApplication::translate("LoginDailog", "\350\257\267\350\276\223\345\205\245\345\257\206\347\240\201", Q_NULLPTR));
         label->setText(QApplication::translate("LoginDailog", "\347\224\250\346\210\267\345\220\215", Q_NULLPTR));
         label_2->setText(QApplication::translate("LoginDailog", "\345\257\206\347\240\201", Q_NULLPTR));
     } // retranslateUi
