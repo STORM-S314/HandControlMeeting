@@ -1,4 +1,7 @@
+**软件由STORM-314小组所有，严禁商用、竞赛**
+
 # HandControlMeeting
+
 ## 手势识别模块
 
 ### HandControlPython
