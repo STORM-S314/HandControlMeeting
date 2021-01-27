@@ -26,11 +26,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    logindailog.cpp
+    logindailog.cpp \
+    bootanimation.cpp
 
 HEADERS += \
         mainwindow.h \
-    logindailog.h
+    logindailog.h \
+    bootanimation.h
 
 FORMS += \
         mainwindow.ui \

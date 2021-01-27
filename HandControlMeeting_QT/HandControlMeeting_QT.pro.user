@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.3.1, 2021-01-21T16:53:20. -->
+<!-- Written by QtCreator 4.3.1, 2021-01-28T01:53:35. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
-  <value type="QByteArray">{57e9d796-d645-4878-a04f-0f7d35714519}</value>
+  <value type="QByteArray">{edf92f77-60fa-4d34-aaef-dd9ae3b1e7e6}</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -285,8 +285,8 @@
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">HandControlMeeting_QT</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:D:/HandControlMeeting/HandControlMeeting/HandControlMeeting_QT/HandControlMeeting_QT.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">HandControlMeeting_QT2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:D:/QtCreatorProject/HandControlMeeting/HandControlMeeting_QT/HandControlMeeting_QT.pro</value>
     <value type="bool" key="QmakeProjectManager.QmakeRunConfiguration.UseLibrarySearchPath">true</value>
     <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.CommandLineArguments"></value>
     <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.ProFile">HandControlMeeting_QT.pro</value>
